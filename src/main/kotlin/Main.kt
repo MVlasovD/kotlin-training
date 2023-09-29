@@ -1,8 +1,8 @@
 fun main(args: Array<String>) {
     println("Hello World!")
     val value: String = "Lalalalala"
-    var num1: Int = 1
-    var num2: Int = 5
+    val num1: Int = 1
+    val num2: Int = 5
     println("Sum of $num1 and $num2 is ${num1 + num2}")
     getString(value)
 
@@ -29,14 +29,21 @@ fun main(args: Array<String>) {
     for (i in 10 downTo 1)
         print(i)
 
-
     for (i in 0..100 step 10)
-        print(i)
+        println(i)
 
+    val v = Resource
+    val n = Resource
+    println(v.hashCode())
+    println(n.hashCode())
 }
 
 fun getString(arg: String?) {
     print("$arg arg\n")
     Util.getNameOf(arg)
+}
+
+object Resource {
+    const val name = "Name"
 }
 

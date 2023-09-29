@@ -1,11 +1,11 @@
-//import kotlinx.coroutines.CoroutineScope;
+package cor;//import kotlinx.coroutines.CoroutineScope;
 //import kotlinx.coroutines.Dispatchers;
 //import kotlinx.coroutines.launch;
 //
 //public class Coroutines {
 //
 //
-//    public static void main(String[] args) {
+//    public static void cor.cor.main(String[] args) {
 //        // Создаем область корутин
 //        CoroutineScope scope = CoroutineScope(Dispatchers.Default);
 //        // Запускаем корутину
@@ -34,3 +34,23 @@
 //    }
 //}
 
+class Coroutines extends Thread{
+
+    public static void main(String[] args) {
+
+        startThread(100000);
+
+    }
+
+    public static void startThread(int numberOfThreads) {
+        for (int i = 0; i < numberOfThreads; i++) {
+            Coroutines thread = new Coroutines();
+            thread.start();
+        }
+    }
+
+    @Override
+    public void run() {
+        System.out.printf("%s \n", Thread.currentThread().getName());
+    }
+}

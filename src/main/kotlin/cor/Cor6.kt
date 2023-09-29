@@ -1,3 +1,5 @@
+package cor
+
 import kotlinx.coroutines.*
 
 fun main() = runBlocking {

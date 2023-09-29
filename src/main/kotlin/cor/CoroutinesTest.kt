@@ -1,8 +1,10 @@
+package cor
+
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-//suspend fun main(){
+//suspend fun cor.cor.main(){
 //    for(i in 0..5){
 //        delay(400L)
 //        println(i)
@@ -11,7 +13,7 @@ import kotlinx.coroutines.launch
 //    println("Hello Coroutines")
 //}
 
-//suspend fun main() = coroutineScope{
+//suspend fun cor.cor.main() = coroutineScope{
 //    launch{
 //        for(i in 0..5){
 //            delay(400L)
@@ -30,6 +32,6 @@ suspend fun main()= coroutineScope<Unit> {
 suspend fun doWork(){
     for(i in 0..5){
         println(i)
-        delay(400L)
+        delay(4L)
     }
 }

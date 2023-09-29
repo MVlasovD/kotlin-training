@@ -1,7 +1,7 @@
 
 fun main(){
 
-    var a:String ="String"
+    var a = "String"
     a = "null" //no null
     a.length
 

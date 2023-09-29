@@ -28,3 +28,8 @@ fun main() {
 
     println(result)
 }
+
+fun getName(){
+    println("Hello")
+    var list = listOf(1,2,3,4,5)
+}
